@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/mesan/AndroidStudioProjects/MyMap/app/src/main/res/layout/activity_display_map.xml" value="0.12771739130434784" />
-        <entry key="..\:/Users/mesan/AndroidStudioProjects/MyMap/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/mesan/AndroidStudioProjects/MyMap/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/mesan/AndroidStudioProjects/MyMap/app/src/main/res/layout/dialog_create_map.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mesan/AndroidStudioProjects/MyMap/app/src/main/res/layout/dialog_create_place.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mesan/AndroidStudioProjects/MyMap/app/src/main/res/menu/menu_create_map.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
