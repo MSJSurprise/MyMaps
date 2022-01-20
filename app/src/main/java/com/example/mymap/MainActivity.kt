@@ -32,9 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         userMaps = deserializeUserMaps(this).toMutableList()
 //        For generated samples
-//        val userMapsFromFile = deserializeUserMaps(this)
-//        userMaps = generateSampleData().toMutableList()
-//        userMaps.addAll(userMapsFromFile)
+        val userMapsFromFile = deserializeUserMaps(this)
+        userMaps = generateSampleData().toMutableList()
+        userMaps.addAll(userMapsFromFile)
         val rvMaps: RecyclerView = findViewById(R.id.rvMaps)
         rvMaps.layoutManager = LinearLayoutManager(this)
         mapAdapter = Mapsadapter(this, userMaps, object: Mapsadapter.OnClickListener{
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this@MainActivity,DisplayMapActivity::class.java)
                 intent.putExtra(EXTRA_USER_MAP, userMaps[position])
                 startActivity(intent)
+                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
             }
         })
         rvMaps.adapter = mapAdapter
